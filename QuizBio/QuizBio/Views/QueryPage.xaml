@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="QuizBio.Views.QueryPage"
+             Title="{Binding Title}">
+   
+    <StackLayout>
+        <Frame CornerRadius="5"
+               BackgroundColor="White" 
+               Margin="20"
+               Padding="10"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="StartAndExpand">
+            <Label Text="{Binding Question}"
+                   FontAttributes="Bold"/>
+        </Frame>
+        
+        <Frame CornerRadius="15"
+               Margin="30,10"
+               HeightRequest="35"
+               Padding="10"
+               Grid.Row="0"
+               HorizontalOptions="FillAndExpand"
+               HasShadow="false"
+               BorderColor="Navy"
+               IsVisible="{Binding Option_1_Visible}"
+               BackgroundColor="{Binding Option_1_Color}"
+               x:Name="option_1">
+            <Button Text="{Binding Option_1}"
+                    FontSize="20"
+                    Command="{Binding Option_1_Tapped}"
+                    TextColor="Black"
+                    BackgroundColor="{Binding Option_1_Color}"
+                    x:Name="option_2_button">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Futura-Medium" />
+                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+        </Frame>
+        
+        <Frame CornerRadius="15"
+               Margin="30,10"
+               HeightRequest="35"
+               Padding="10"
+               BorderColor="Navy"
+               HorizontalOptions="FillAndExpand"
+               HasShadow="false"
+               IsVisible="{Binding Option_2_Visible}"
+               BackgroundColor="{Binding Option_2_Color}"
+               x:Name="option_2">
+            <Button Text="{Binding Option_2}"
+                    FontSize="20"
+                    Command="{Binding Option_2_Tapped}"
+                    TextColor="Black"
+                    BackgroundColor="{Binding Option_2_Color}">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Futura-Medium" />
+                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+        </Frame>
+        
+        <Frame CornerRadius="15" 
+               Margin="30,10"
+               BorderColor="Navy"
+               HeightRequest="35"
+               Padding="10"
+               HorizontalOptions="FillAndExpand"
+               HasShadow="false"
+               IsVisible="{Binding Option_3_Visible}"
+               BackgroundColor="{Binding Option_3_Color}"
+               x:Name="option_3">
+            <Button Text="{Binding Option_3}"
+                    FontSize="20"
+                    Command="{Binding Option_3_Tapped}"
+                    TextColor="Black"
+                    BackgroundColor="{Binding Option_3_Color}">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Futura-Medium" />
+                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+        </Frame>
+        
+        <Frame CornerRadius="15" 
+               Margin="30,10"
+               HeightRequest="35"
+               BorderColor="Navy"
+               Padding="10"
+               HorizontalOptions="FillAndExpand"
+               HasShadow="false"
+               IsVisible="{Binding Option_4_Visible}"
+               BackgroundColor="{Binding Option_4_Color}"
+               x:Name="option_4">
+            <Button Text="{Binding Option_4}"
+                    FontSize="20"
+                    Command="{Binding Option_4_Tapped}"
+                    TextColor="Black"
+                    BackgroundColor="{Binding Option_4_Color}">
+                <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Futura-Medium" />
+                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+        </Frame>
+        
+        <Frame CornerRadius="15" 
+               Margin="10"
+               Padding="10"
+               HorizontalOptions="FillAndExpand" 
+               VerticalOptions="StartAndExpand"
+               IsVisible="{Binding JustificationVisible}"
+               Opacity="0"
+               x:Name="justification">
+            <Label Text="{Binding Justification}"/>
+        </Frame>       
+        
+        <Button Text="PRÓXIMA QUESTÃO"
+                IsVisible="{Binding JustificationVisible}"
+                BackgroundColor="White"/>
+   </StackLayout>
+</ContentPage>

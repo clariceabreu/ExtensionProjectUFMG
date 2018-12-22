@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="QuizBio.Views.JustificationPage">
+    <AbsoluteLayout>
+         <Frame CornerRadius="15"
+               BackgroundColor="#4280A3" 
+               Margin="20"
+               Padding="10"
+               AbsoluteLayout.LayoutBounds="10,10,1,0.1"
+               AbsoluteLayout.LayoutFlags="SizeProportional">
+            <Label Text="Qual dos seguintes animais é do filo dos cordados?"
+                   FontAttributes="Bold"/>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>

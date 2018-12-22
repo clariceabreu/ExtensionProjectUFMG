@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="QuizBio.Views.MainPage">
+    <StackLayout>
+       
+        <Image Source="bioquizicon.png"/>
+
+        <Label Text="Bem vindo ao BioQuiz!"
+               FontSize="30"
+               Margin="30"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="SnellRoundhand" />
+                        <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
+                        <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <Frame BackgroundColor="Green"
+               CornerRadius="25"
+               HeightRequest="50"
+               VerticalOptions="EndAndExpand"
+               Margin="20"
+               Padding="0">
+            
+            <Button Text="INICIAR QUIZ"
+                    TextColor="White"                    
+                    BackgroundColor="Transparent"
+                    Command="{Binding Initialize}">
+                 <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Futura-Medium" />
+                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
+                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                    </OnPlatform>
+                </Button.FontFamily>
+            </Button>
+       </Frame>
+        
+    </StackLayout>
+</ContentPage>

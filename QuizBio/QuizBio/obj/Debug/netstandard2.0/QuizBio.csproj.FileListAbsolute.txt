@@ -1,0 +1,14 @@
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/bin/Debug/netstandard2.0/QuizBio.deps.json
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/bin/Debug/netstandard2.0/QuizBio.dll
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/bin/Debug/netstandard2.0/QuizBio.pdb
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/Views/MainPage.xaml.g.cs
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/Views/QueryPage.xaml.g.cs
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.csproj.CoreCompileInputs.cache
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.AssemblyInfoInputs.cache
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.AssemblyInfo.cs
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.dll
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.pdb
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.csprojAssemblyReference.cache
+/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj/Debug/netstandard2.0/Views/JustificationPage.xaml.g.cs
