@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="QuizBio.Views.FinishPage"
+             Title="{Binding Title}">
+    <StackLayout>
+        <Image Source="bioquizicon.png"
+               Margin="0,0,0,50"/>
+
+        <Label Text="Parabéns!"
+               FontSize="30"
+               Margin="0"
+               IsVisible="{Binding CongratulationsVisible}"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="SnellRoundhand" />
+                        <On Platform="Android" Value="SnellRoundhand.ttf#SnellRoundhand" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+        
+        <Label Text="{Binding HitsCount}"
+               Margin="0"
+               FontSize="20"
+               VerticalOptions="StartAndExpand"
+               HorizontalOptions="CenterAndExpand">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Futura-Medium" />
+                        <On Platform="Android" Value="Cronos.ttf#Cronos" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+
+        <Frame BackgroundColor="#FF3232"
+               CornerRadius="25"
+               HeightRequest="50"
+               VerticalOptions="EndAndExpand"
+               Margin="20"
+               Padding="0">
+            <Button Text="VOLTAR À PÁGINA INICIAL"
+                    TextColor="White"                    
+                    BackgroundColor="Transparent"
+                    Command="{Binding GoBackTapped}">
+                 <Button.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Futura-Medium" />
+                            <On Platform="Android" Value="Cronos.ttf#Cronos" />
+                    </OnPlatform>
+                </Button.FontFamily>
+                <Button.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
+                </Button.FontSize> 
+            </Button>
+       </Frame>
+        
+    </StackLayout>
+</ContentPage>

@@ -26,3 +26,4 @@
 /Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.dll
 /Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/obj/Debug/netstandard2.0/QuizBio.pdb
+/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/obj/Debug/netstandard2.0/Views/FinishPage.xaml.g.cs

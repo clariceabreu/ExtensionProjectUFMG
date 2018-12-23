@@ -1,5 +1,5 @@
---cache=/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-12.1/mtouch-cache
---sim=/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-12.1/QuizBio.iOS.app
+--cache=/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-12.1/mtouch-cache
+--sim=/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.iOS/bin/iPhoneSimulator/Debug/device-builds/iphone10.4-12.1/QuizBio.iOS.app
 --executable=QuizBio.iOS
 --debug
 --nolink
@@ -9,10 +9,10 @@
 --aot-options=-O=-float32
 --http-message-handler=HttpClientHandler
 --abi=x86_64
---symbollist=/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-12.1/mtouch-symbols.list
+--symbollist=/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.4-12.1/mtouch-symbols.list
 --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
--r=/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/bin/Debug/netstandard2.0/QuizBio.dll
+-r=/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/bin/Debug/netstandard2.0/QuizBio.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll
@@ -200,7 +200,7 @@
 -r=/Users/clariceabreu/.nuget/packages/xamarin.forms/3.4.0.1008975/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/clariceabreu/.nuget/packages/xamarin.forms/3.4.0.1008975/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/clariceabreu/.nuget/packages/xamarin.forms/3.4.0.1008975/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
--r=/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/bin/Debug/netstandard2.0/QuizBio.dll
+-r=/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/bin/Debug/netstandard2.0/QuizBio.dll
 --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.iOS/bin/iPhoneSimulator/Debug/QuizBio.iOS.exe
+--root-assembly=/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.iOS/bin/iPhoneSimulator/Debug/QuizBio.iOS.exe
 

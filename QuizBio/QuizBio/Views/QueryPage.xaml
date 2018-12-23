@@ -23,21 +23,26 @@
                IsVisible="{Binding Option_1_Visible}"
                BackgroundColor="{Binding Option_1_Color}"
                x:Name="option_1">
-            <Button Text="{Binding Option_1}"
-                    Command="{Binding Option_1_Tapped}"
+            <Label Text="{Binding Option_1}"
+                    FontSize="20"
+                    Margin="5"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
                     TextColor="Black"
-                    BackgroundColor="{Binding Option_1_Color}"
-                    x:Name="option_2_button">
-                <Button.FontFamily>
+                    BackgroundColor="{Binding Option_1_Color}">
+                <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
                             <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
-                </Button.FontFamily>
-                <Button.FontSize>
+                </Label.FontFamily>
+                <Label.FontSize>
                         <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
-                </Button.FontSize> 
-            </Button>
+                </Label.FontSize> 
+            </Label>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Option_1_Tapped}"/>
+            </Frame.GestureRecognizers>
         </Frame>
         
         <Frame CornerRadius="15"
@@ -49,21 +54,26 @@
                IsVisible="{Binding Option_2_Visible}"
                BackgroundColor="{Binding Option_2_Color}"
                x:Name="option_2">
-            <Button Text="{Binding Option_2}"
+            <Label Text="{Binding Option_2}"
                     FontSize="20"
-                    Command="{Binding Option_2_Tapped}"
+                    Margin="5"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
                     TextColor="Black"
                     BackgroundColor="{Binding Option_2_Color}">
-                <Button.FontFamily>
+                <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
                             <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
-                </Button.FontFamily>
-                <Button.FontSize>
-                    <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
-                </Button.FontSize> 
-            </Button>
+                </Label.FontFamily>
+                <Label.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
+                </Label.FontSize> 
+            </Label>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Option_2_Tapped}"/>
+            </Frame.GestureRecognizers>
         </Frame>
         
         <Frame CornerRadius="15" 
@@ -75,21 +85,26 @@
                IsVisible="{Binding Option_3_Visible}"
                BackgroundColor="{Binding Option_3_Color}"
                x:Name="option_3">
-            <Button Text="{Binding Option_3}"
+            <Label Text="{Binding Option_3}"
                     FontSize="20"
-                    Command="{Binding Option_3_Tapped}"
+                    Margin="5"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
                     TextColor="Black"
                     BackgroundColor="{Binding Option_3_Color}">
-                <Button.FontFamily>
+                <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
                             <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
-                </Button.FontFamily>
-                <Button.FontSize>
+                </Label.FontFamily>
+                <Label.FontSize>
                         <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
-                </Button.FontSize> 
-            </Button>
+                </Label.FontSize> 
+            </Label>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Option_3_Tapped}"/>
+            </Frame.GestureRecognizers>
         </Frame>
         
         <Frame CornerRadius="15" 
@@ -101,21 +116,26 @@
                IsVisible="{Binding Option_4_Visible}"
                BackgroundColor="{Binding Option_4_Color}"
                x:Name="option_4">
-            <Button Text="{Binding Option_4}"
+            <Label Text="{Binding Option_4}"
                     FontSize="20"
-                    Command="{Binding Option_4_Tapped}"
+                    Margin="5"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
                     TextColor="Black"
                     BackgroundColor="{Binding Option_4_Color}">
-                <Button.FontFamily>
+                <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
                             <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
-                </Button.FontFamily>
-                <Button.FontSize>
+                </Label.FontFamily>
+                <Label.FontSize>
                         <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
-                </Button.FontSize> 
-            </Button>
+                </Label.FontSize> 
+            </Label>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding Option_4_Tapped}"/>
+            </Frame.GestureRecognizers>
         </Frame>
         
         <Frame CornerRadius="15" 

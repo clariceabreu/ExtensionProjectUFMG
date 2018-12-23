@@ -16,7 +16,6 @@ namespace QuizBio.Models
             string option_2 = "Baleia";
             string option_3 = "Aranha";
             string option_4 = "Polvo";
-
             Query query_1 = new Query(question, answer, justification, option_1, option_2, option_3, option_4);
             QList.Add(query_1);
 
@@ -27,9 +26,18 @@ namespace QuizBio.Models
             option_2 = "Possui aglutinogênio B e aglutinina anti-A";
             option_3 = "Possui aglutinogênio AB e não possui aglutininas";
             option_4 = "Não possui aglutinogênio e possui aglutininas anti-A e anti-B";
-
             Query query_2 = new Query(question, answer, justification, option_1, option_2, option_3, option_4);
             QList.Add(query_2);
+
+            question = "Marque a alternativa que indica quais os elementos químicos fundamentais encontrados na composição de um carboidrato.";
+            answer = EOptions.Option_3;
+            justification = "Os carboidratos, também chamados de glicídios, são formados basicamente por átomos de carbono, hidrogênio e oxigênio.";
+            option_1 = "Carbono, hidrogênio e hélio";
+            option_2 = "Sódio, potássio e carbono";
+            option_3 = "Carbono, oxigênio e hidrogênios";
+            option_4 = "Carbono, cálcio e potássio.";
+            Query query_3 = new Query(question, answer, justification, option_1, option_2, option_3, option_4);
+            QList.Add(query_3);
         }
     }
 }

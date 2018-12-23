@@ -1,10 +1,8 @@
 ﻿using System;
 namespace QuizBio.Models
 {
-    public class Session
+    public static class Session
     {
-        public Session()
-        {
-        }
+        public static int hitsCount;
     }
 }

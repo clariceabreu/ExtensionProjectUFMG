@@ -379,9 +379,9 @@ namespace QuizBio.ViewModels
 
         private async void GoToNextQuestion()
         {
-            if (_currentQuestionNumber == 2)
+            if (_currentQuestionNumber == 3)
             {
-
+                await _navigationService.NavigateAsync("FinishPage");
             }
             else
             {

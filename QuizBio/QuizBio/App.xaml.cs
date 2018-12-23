@@ -33,6 +33,7 @@ namespace QuizBio
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<QueryPage>();
             containerRegistry.RegisterForNavigation<JustificationPage>();
+            containerRegistry.RegisterForNavigation<FinishPage>();
         }
     }
 }
