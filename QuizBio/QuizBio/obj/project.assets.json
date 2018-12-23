@@ -483,11 +483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/QuizBio.csproj",
+      "projectUniqueName": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/QuizBio.csproj",
       "projectName": "QuizBio",
-      "projectPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/QuizBio.csproj",
+      "projectPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/QuizBio.csproj",
       "packagesPath": "/Users/clariceabreu/.nuget/packages/",
-      "outputPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/obj",
+      "outputPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

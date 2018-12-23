@@ -70,7 +70,6 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <None Include="Resources\bioquizicon.png" />
     <None Include="Resources\backgound.jpg" />
     <None Include="Resources\bioback.png" />
   </ItemGroup>
@@ -84,6 +83,7 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\bioquizicon.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\bioquizicon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\bioquizicon.png" />
+    <AndroidResource Include="Resources\drawable\bioquizicon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -103,6 +103,16 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\mipmap-hdpi\bioquizicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SnellRoundhand.ttf" />
+    <AndroidAsset Include="Assets\futura-medium.ttf" />
+    <AndroidAsset Include="Assets\NeuzeitSBook.ttf" />
+    <AndroidAsset Include="Assets\NeuzeitBold.ttf" />
+    <AndroidAsset Include="Assets\Cronos.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

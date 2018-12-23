@@ -23,17 +23,17 @@ namespace QuizBio.ViewModels
             NavigationService = navigationService;
         }
 
-        public void OnNavigatedFrom(INavigationParameters parameters)
+        public virtual void OnNavigatedFrom(INavigationParameters parameters)
         {
 
         }
 
-        public void OnNavigatedTo(INavigationParameters parameters)
+        public virtual void OnNavigatedTo(INavigationParameters parameters)
         {
 
         }
 
-        public void OnNavigatingTo(INavigationParameters parameters)
+        public virtual void OnNavigatingTo(INavigationParameters parameters)
         {
 
         }

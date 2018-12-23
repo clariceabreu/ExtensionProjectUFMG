@@ -14,8 +14,7 @@
             <Label.FontFamily>
                 <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="SnellRoundhand" />
-                        <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                        <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                        <On Platform="Android" Value="SnellRoundhand.ttf#SnellRoundhand" />
                 </OnPlatform>
             </Label.FontFamily>
         </Label>
@@ -34,10 +33,12 @@
                  <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
-                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                            <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
                 </Button.FontFamily>
+                <Button.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
+                </Button.FontSize> 
             </Button>
        </Frame>
         

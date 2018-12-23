@@ -992,11 +992,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.iOS/QuizBio.iOS.csproj",
+      "projectUniqueName": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.iOS/QuizBio.iOS.csproj",
       "projectName": "QuizBio.iOS",
-      "projectPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.iOS/QuizBio.iOS.csproj",
+      "projectPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.iOS/QuizBio.iOS.csproj",
       "packagesPath": "/Users/clariceabreu/.nuget/packages/",
-      "outputPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.iOS/obj",
+      "outputPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.iOS/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/clariceabreu/.config/NuGet/NuGet.Config"
@@ -1010,8 +1010,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/QuizBio.csproj": {
-              "projectPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/QuizBio.csproj"
+            "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/QuizBio.csproj": {
+              "projectPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/QuizBio.csproj"
             }
           }
         }

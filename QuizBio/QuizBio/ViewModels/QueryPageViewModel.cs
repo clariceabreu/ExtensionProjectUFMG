@@ -15,18 +15,16 @@ namespace QuizBio.ViewModels
         public DelegateCommand Option_2_Tapped { get; private set; }
         public DelegateCommand Option_3_Tapped { get; private set; }
         public DelegateCommand Option_4_Tapped { get; private set; }
+        public DelegateCommand NextTapped { get; private set; }
 
         public Action FadeOut { get; set; }
-        public Action FadeIn { get; set; }
+        public Action<EOptions> FadeIn { get; set; }
 
         private EOptions _optionTapped;
+        private int _currentQuestionNumber;
 
         public QueryPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Question1();
-
-            Title = "Questão 1";
-
             _navigationService = navigationService;
 
             Option_1_Tapped = new DelegateCommand(() =>
@@ -53,10 +51,81 @@ namespace QuizBio.ViewModels
                 CheckAnswer();
             });
 
+            NextTapped = new DelegateCommand(GoToNextQuestion);
         }
 
         #region functions
-        public void Question1()
+        public override void OnNavigatingTo(INavigationParameters parameters)
+        {
+            if (parameters.Count > 0)
+            {
+                int questionNumber = (int)parameters["QuestionNumber"];
+
+                if (questionNumber == 1)
+                {
+                    Title = "Questão 1";
+                    Question_1();
+                    _currentQuestionNumber = 1;
+                }
+                else if (questionNumber == 2)
+                {
+                    Title = "Questão 2";
+                    Question_2();
+                    _currentQuestionNumber = 2;
+                }
+                else if (questionNumber == 3)
+                {
+                    Title = "Questão 3";
+                    Question_3();
+                    _currentQuestionNumber = 3;
+                }
+                else if (questionNumber == 4)
+                {
+                    Title = "Questão 4";
+                    Question_4();
+                    _currentQuestionNumber = 4;
+                }
+                else if (questionNumber == 5)
+                {
+                    Title = "Questão 5";
+                    Question_5();
+                    _currentQuestionNumber = 5;
+                }
+                else if (questionNumber == 6)
+                {
+                    Title = "Questão 6";
+                    Question_6();
+                    _currentQuestionNumber = 6;
+                }
+                else if (questionNumber == 7)
+                {
+                    Title = "Questão 7";
+                    Question_7();
+                    _currentQuestionNumber = 7;
+                }
+                else if (questionNumber == 8)
+                {
+                    Title = "Questão 8";
+                    Question_8();
+                    _currentQuestionNumber = 8;
+                }
+                else if (questionNumber == 9)
+                {
+                    Title = "Questão 9";
+                    Question_9();
+                    _currentQuestionNumber = 9;
+                }
+                else if (questionNumber == 10)
+                {
+                    Title = "Questão 10";
+                    Question_10();
+                    _currentQuestionNumber = 10;
+                }
+            }
+        }
+
+        #region Set Questions
+        public void Question_1()
         {
             QueriesList.InitializeList();
 
@@ -69,10 +138,112 @@ namespace QuizBio.ViewModels
             Option_4 = QueriesList.QList[0].Option_4;
         }
 
+        private void Question_2()
+        {
+            Question = QueriesList.QList[1].Question;
+            Answer = QueriesList.QList[1].Answer;
+            Justification = QueriesList.QList[1].Justification;
+            Option_1 = QueriesList.QList[1].Option_1;
+            Option_2 = QueriesList.QList[1].Option_2;
+            Option_3 = QueriesList.QList[1].Option_3;
+            Option_4 = QueriesList.QList[1].Option_4;
+        }
+
+        private void Question_3()
+        {
+            Question = QueriesList.QList[2].Question;
+            Answer = QueriesList.QList[2].Answer;
+            Justification = QueriesList.QList[2].Justification;
+            Option_1 = QueriesList.QList[2].Option_1;
+            Option_2 = QueriesList.QList[2].Option_2;
+            Option_3 = QueriesList.QList[2].Option_3;
+            Option_4 = QueriesList.QList[2].Option_4;
+        }
+
+        private void Question_4()
+        {
+            Question = QueriesList.QList[3].Question;
+            Answer = QueriesList.QList[3].Answer;
+            Justification = QueriesList.QList[31].Justification;
+            Option_1 = QueriesList.QList[3].Option_1;
+            Option_2 = QueriesList.QList[3].Option_2;
+            Option_3 = QueriesList.QList[3].Option_3;
+            Option_4 = QueriesList.QList[3].Option_4;
+        }
+
+        private void Question_5()
+        {
+            Question = QueriesList.QList[4].Question;
+            Answer = QueriesList.QList[4].Answer;
+            Justification = QueriesList.QList[4].Justification;
+            Option_1 = QueriesList.QList[4].Option_1;
+            Option_2 = QueriesList.QList[4].Option_2;
+            Option_3 = QueriesList.QList[4].Option_3;
+            Option_4 = QueriesList.QList[4].Option_4;
+        }
+
+        private void Question_6()
+        {
+            Question = QueriesList.QList[5].Question;
+            Answer = QueriesList.QList[5].Answer;
+            Justification = QueriesList.QList[5].Justification;
+            Option_1 = QueriesList.QList[5].Option_1;
+            Option_2 = QueriesList.QList[5].Option_2;
+            Option_3 = QueriesList.QList[5].Option_3;
+            Option_4 = QueriesList.QList[5].Option_4;
+        }
+
+        private void Question_7()
+        {
+            Question = QueriesList.QList[6].Question;
+            Answer = QueriesList.QList[6].Answer;
+            Justification = QueriesList.QList[6].Justification;
+            Option_1 = QueriesList.QList[6].Option_1;
+            Option_2 = QueriesList.QList[6].Option_2;
+            Option_3 = QueriesList.QList[6].Option_3;
+            Option_4 = QueriesList.QList[6].Option_4;
+        }
+
+        private void Question_8()
+        {
+            Question = QueriesList.QList[7].Question;
+            Answer = QueriesList.QList[7].Answer;
+            Justification = QueriesList.QList[7].Justification;
+            Option_1 = QueriesList.QList[7].Option_1;
+            Option_2 = QueriesList.QList[7].Option_2;
+            Option_3 = QueriesList.QList[7].Option_3;
+            Option_4 = QueriesList.QList[7].Option_4;
+        }
+
+        private void Question_9()
+        {
+            Question = QueriesList.QList[8].Question;
+            Answer = QueriesList.QList[8].Answer;
+            Justification = QueriesList.QList[8].Justification;
+            Option_1 = QueriesList.QList[8].Option_1;
+            Option_2 = QueriesList.QList[8].Option_2;
+            Option_3 = QueriesList.QList[8].Option_3;
+            Option_4 = QueriesList.QList[8].Option_4;
+        }
+
+        private void Question_10()
+        {
+            Question = QueriesList.QList[9].Question;
+            Answer = QueriesList.QList[9].Answer;
+            Justification = QueriesList.QList[9].Justification;
+            Option_1 = QueriesList.QList[9].Option_1;
+            Option_2 = QueriesList.QList[9].Option_2;
+            Option_3 = QueriesList.QList[9].Option_3;
+            Option_4 = QueriesList.QList[9].Option_4;
+        }
+        #endregion
+
         private async void CheckAnswer()
         {
             if (_optionTapped == Answer)
             {
+                Session.hitsCount++;
+
                 if (_optionTapped == EOptions.Option_1)
                 {
                     Option_1_Color = Color.FromHex("#66B266");
@@ -203,7 +374,21 @@ namespace QuizBio.ViewModels
             }
 
             JustificationVisible = true;
-            FadeIn();
+            FadeIn(Answer);
+        }
+
+        private async void GoToNextQuestion()
+        {
+            if (_currentQuestionNumber == 2)
+            {
+
+            }
+            else
+            {
+                NavigationParameters navParam = new NavigationParameters();
+                navParam.Add("QuestionNumber", _currentQuestionNumber + 1);
+                await _navigationService.NavigateAsync("QueryPage", navParam);
+            }
         }
         #endregion
 

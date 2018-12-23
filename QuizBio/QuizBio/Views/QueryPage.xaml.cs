@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using QuizBio.Models;
 using QuizBio.ViewModels;
 using Xamarin.Forms;
 
@@ -29,13 +30,28 @@ namespace QuizBio.Views
                 );
             };
 
-            vm.FadeIn = async () =>
+            vm.FadeIn = async (answer) =>
             {
-                await Task.WhenAll(
-                    option_2.FadeTo(1, 500),
-                    justification.FadeTo(1,500)
-                    
-                );
+                if (answer == EOptions.Option_1)
+                {
+                    await Task.WhenAll(option_1.FadeTo(1, 500),
+                                       justification.FadeTo(1, 500));
+                }
+                else if (answer == EOptions.Option_2)
+                {
+                    await Task.WhenAll(option_2.FadeTo(1, 500),
+                                       justification.FadeTo(1, 500));
+                }
+                else if (answer == EOptions.Option_3)
+                {
+                    await Task.WhenAll(option_3.FadeTo(1, 500),
+                                       justification.FadeTo(1, 500));
+                }
+                else
+                {
+                    await Task.WhenAll(option_4.FadeTo(1, 500),
+                                       justification.FadeTo(1, 500));
+                }
             };
 
         }

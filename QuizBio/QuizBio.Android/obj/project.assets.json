@@ -953,11 +953,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.Android/QuizBio.Android.csproj",
+      "projectUniqueName": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.Android/QuizBio.Android.csproj",
       "projectName": "QuizBio.Android",
-      "projectPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.Android/QuizBio.Android.csproj",
+      "projectPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.Android/QuizBio.Android.csproj",
       "packagesPath": "/Users/clariceabreu/.nuget/packages/",
-      "outputPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio.Android/obj",
+      "outputPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio.Android/obj",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/clariceabreu/.config/NuGet/NuGet.Config"
@@ -971,8 +971,8 @@
       "frameworks": {
         "monoandroid71": {
           "projectReferences": {
-            "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/QuizBio.csproj": {
-              "projectPath": "/Users/clariceabreu/Projects/Prism/QuizBio/QuizBio/QuizBio/QuizBio.csproj"
+            "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/QuizBio.csproj": {
+              "projectPath": "/Users/clariceabreu/git/ExtensionProjectUFMG/QuizBio/QuizBio/QuizBio.csproj"
             }
           }
         }

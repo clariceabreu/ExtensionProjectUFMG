@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using QuizBio.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +24,10 @@ namespace QuizBio.ViewModels
 
         public void GoToQueryPage()
         {
-            _navigationService.NavigateAsync("QueryPage");
+            Session.hitsCount = 0;
+            NavigationParameters navParam = new NavigationParameters();
+            navParam.Add("QuestionNumber", 1);
+            _navigationService.NavigateAsync("QueryPage",navParam);
         }
 
     }

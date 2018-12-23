@@ -19,6 +19,17 @@ namespace QuizBio.Models
 
             Query query_1 = new Query(question, answer, justification, option_1, option_2, option_3, option_4);
             QList.Add(query_1);
+
+            question = "Na espécie humana podemos distinguir quatro tipos sanguíneos diferentes: A, B, AB e O. Imagine que uma pessoa possui tipo sanguíneo O. Marque a alternativa que indica as características desse tipo sanguíneo.";
+            answer = EOptions.Option_4;
+            justification = "O sangue tipo O não apresenta aglutinogênios em suas hemácias, entretanto possui aglutininas anti-A e anti-B em seu plasma. Isso faz com que uma pessoa do tipo O só possa receber sangue desse mesmo tipo sanguíneo.";
+            option_1 = "Possui aglutinogênios A e aglutinina anti-B";
+            option_2 = "Possui aglutinogênio B e aglutinina anti-A";
+            option_3 = "Possui aglutinogênio AB e não possui aglutininas";
+            option_4 = "Não possui aglutinogênio e possui aglutininas anti-A e anti-B";
+
+            Query query_2 = new Query(question, answer, justification, option_1, option_2, option_3, option_4);
+            QList.Add(query_2);
         }
     }
 }

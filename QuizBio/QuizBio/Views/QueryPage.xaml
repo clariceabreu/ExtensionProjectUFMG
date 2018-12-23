@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="QuizBio.Views.QueryPage"
              Title="{Binding Title}">
-   
     <StackLayout>
         <Frame CornerRadius="5"
                BackgroundColor="White" 
@@ -17,17 +16,14 @@
         
         <Frame CornerRadius="15"
                Margin="30,10"
-               HeightRequest="35"
-               Padding="10"
-               Grid.Row="0"
+               Padding="5"
                HorizontalOptions="FillAndExpand"
                HasShadow="false"
-               BorderColor="Navy"
+               BorderColor="Black"
                IsVisible="{Binding Option_1_Visible}"
                BackgroundColor="{Binding Option_1_Color}"
                x:Name="option_1">
             <Button Text="{Binding Option_1}"
-                    FontSize="20"
                     Command="{Binding Option_1_Tapped}"
                     TextColor="Black"
                     BackgroundColor="{Binding Option_1_Color}"
@@ -35,18 +31,19 @@
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
-                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                            <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
                 </Button.FontFamily>
+                <Button.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
+                </Button.FontSize> 
             </Button>
         </Frame>
         
         <Frame CornerRadius="15"
                Margin="30,10"
-               HeightRequest="35"
-               Padding="10"
-               BorderColor="Navy"
+               BorderColor="Black"
+               Padding="5"
                HorizontalOptions="FillAndExpand"
                HasShadow="false"
                IsVisible="{Binding Option_2_Visible}"
@@ -60,18 +57,19 @@
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
-                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                            <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
                 </Button.FontFamily>
+                <Button.FontSize>
+                    <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
+                </Button.FontSize> 
             </Button>
         </Frame>
         
         <Frame CornerRadius="15" 
                Margin="30,10"
-               BorderColor="Navy"
-               HeightRequest="35"
-               Padding="10"
+               Padding="5"
+               BorderColor="Black"
                HorizontalOptions="FillAndExpand"
                HasShadow="false"
                IsVisible="{Binding Option_3_Visible}"
@@ -85,18 +83,19 @@
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
-                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                            <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
                 </Button.FontFamily>
+                <Button.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
+                </Button.FontSize> 
             </Button>
         </Frame>
         
         <Frame CornerRadius="15" 
                Margin="30,10"
-               HeightRequest="35"
-               BorderColor="Navy"
-               Padding="10"
+               BorderColor="Black"
+               Padding="5"
                HorizontalOptions="FillAndExpand"
                HasShadow="false"
                IsVisible="{Binding Option_4_Visible}"
@@ -110,10 +109,12 @@
                 <Button.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                             <On Platform="iOS" Value="Futura-Medium" />
-                            <On Platform="Android" Value="Lobster-Regular.ttf#Lobster-Regular" />
-                            <On Platform="UWP" Value="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
+                            <On Platform="Android" Value="Cronos.ttf#Cronos" />
                     </OnPlatform>
                 </Button.FontFamily>
+                <Button.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="20" Android="14"/>
+                </Button.FontSize> 
             </Button>
         </Frame>
         
@@ -129,6 +130,7 @@
         </Frame>       
         
         <Button Text="PRÓXIMA QUESTÃO"
+                Command="{Binding NextTapped}"
                 IsVisible="{Binding JustificationVisible}"
                 BackgroundColor="White"/>
    </StackLayout>
