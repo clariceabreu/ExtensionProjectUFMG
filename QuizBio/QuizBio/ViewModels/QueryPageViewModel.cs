@@ -61,188 +61,101 @@ namespace QuizBio.ViewModels
             {
                 int questionNumber = (int)parameters["QuestionNumber"];
 
-                if (questionNumber == 1)
+                if (questionNumber >= 1 && questionNumber <= 10)
                 {
-                    Title = "Questão 1";
-                    Question_1();
-                    _currentQuestionNumber = 1;
-                }
-                else if (questionNumber == 2)
-                {
-                    Title = "Questão 2";
-                    Question_2();
-                    _currentQuestionNumber = 2;
-                }
-                else if (questionNumber == 3)
-                {
-                    Title = "Questão 3";
-                    Question_3();
-                    _currentQuestionNumber = 3;
-                }
-                else if (questionNumber == 4)
-                {
-                    Title = "Questão 4";
-                    Question_4();
-                    _currentQuestionNumber = 4;
-                }
-                else if (questionNumber == 5)
-                {
-                    Title = "Questão 5";
-                    Question_5();
-                    _currentQuestionNumber = 5;
-                }
-                else if (questionNumber == 6)
-                {
-                    Title = "Questão 6";
-                    Question_6();
-                    _currentQuestionNumber = 6;
-                }
-                else if (questionNumber == 7)
-                {
-                    Title = "Questão 7";
-                    Question_7();
-                    _currentQuestionNumber = 7;
-                }
-                else if (questionNumber == 8)
-                {
-                    Title = "Questão 8";
-                    Question_8();
-                    _currentQuestionNumber = 8;
-                }
-                else if (questionNumber == 9)
-                {
-                    Title = "Questão 9";
-                    Question_9();
-                    _currentQuestionNumber = 9;
-                }
-                else if (questionNumber == 10)
-                {
-                    Title = "Questão 10";
-                    Question_10();
-                    _currentQuestionNumber = 10;
+                    Title = "Questão " + questionNumber;
+                    _currentQuestionNumber = questionNumber;
+                    SetQuestion(questionNumber);
+
+                    if (Session.QueriesAnswered.Contains(questionNumber))
+                    {
+                        ShowJustification();
+                    }
+                    else
+                    {
+                        ShowOptions();
+                    }
                 }
             }
         }
 
-        #region Set Questions
-        public void Question_1()
-        {
-            QueriesList.InitializeList();
 
-            Question = QueriesList.QList[0].Question;
-            Answer = QueriesList.QList[0].Answer;
-            Justification = QueriesList.QList[0].Justification;
-            Option_1 = QueriesList.QList[0].Option_1;
-            Option_2 = QueriesList.QList[0].Option_2;
-            Option_3 = QueriesList.QList[0].Option_3;
-            Option_4 = QueriesList.QList[0].Option_4;
+        public void SetQuestion(int questionNumber)
+        {
+            if (questionNumber == 1)
+            {
+                QueriesList.InitializeList();
+                Session.QueriesAnswered.Clear();
+            }
+
+            questionNumber--; //Array starts at 0 instead of 1
+
+            Question = QueriesList.QList[questionNumber].Question;
+            Answer = QueriesList.QList[questionNumber].Answer;
+            Justification = QueriesList.QList[questionNumber].Justification;
+            Option_1 = QueriesList.QList[questionNumber].Option_1;
+            Option_2 = QueriesList.QList[questionNumber].Option_2;
+            Option_3 = QueriesList.QList[questionNumber].Option_3;
+            Option_4 = QueriesList.QList[questionNumber].Option_4;
         }
 
-        private void Question_2()
+        private void ShowOptions()
         {
-            Question = QueriesList.QList[1].Question;
-            Answer = QueriesList.QList[1].Answer;
-            Justification = QueriesList.QList[1].Justification;
-            Option_1 = QueriesList.QList[1].Option_1;
-            Option_2 = QueriesList.QList[1].Option_2;
-            Option_3 = QueriesList.QList[1].Option_3;
-            Option_4 = QueriesList.QList[1].Option_4;
+            Option_1_Visible = true;
+            Option_2_Visible = true;
+            Option_3_Visible = true;
+            Option_4_Visible = true;
         }
 
-        private void Question_3()
+        private void ShowJustification()
         {
-            Question = QueriesList.QList[2].Question;
-            Answer = QueriesList.QList[2].Answer;
-            Justification = QueriesList.QList[2].Justification;
-            Option_1 = QueriesList.QList[2].Option_1;
-            Option_2 = QueriesList.QList[2].Option_2;
-            Option_3 = QueriesList.QList[2].Option_3;
-            Option_4 = QueriesList.QList[2].Option_4;
+            if (Answer == EOptions.Option_1)
+            {
+                Option_1_Visible = true;
+                Option_1_Color = Color.FromHex("#66B266");
+                Option_2_Visible = false;
+                Option_3_Visible = false;
+                Option_4_Visible = false;
+                JustificationVisible = true;
+                JustificationOpacity = 1;
+            }
+            else if (Answer == EOptions.Option_2)
+            {
+                Option_1_Visible = false;
+                Option_2_Visible = true;
+                Option_2_Color = Color.FromHex("#66B266");
+                Option_3_Visible = false;
+                Option_4_Visible = false;
+                JustificationVisible = true;
+                JustificationOpacity = 1;
+            }
+            else if (Answer == EOptions.Option_3)
+            {
+                Option_1_Visible = false;
+                Option_2_Visible = false;
+                Option_3_Visible = true;
+                Option_3_Color = Color.FromHex("#66B266");
+                Option_4_Visible = false;
+                JustificationVisible = true;
+                JustificationOpacity = 1;
+            }
+            else
+            {
+                Option_1_Visible = false;
+                Option_2_Visible = false;
+                Option_3_Visible = false;
+                Option_4_Visible = true;
+                Option_4_Color = Color.FromHex("#66B266");
+                JustificationVisible = true;
+                JustificationOpacity = 1;
+            }
         }
-
-        private void Question_4()
-        {
-            Question = QueriesList.QList[3].Question;
-            Answer = QueriesList.QList[3].Answer;
-            Justification = QueriesList.QList[31].Justification;
-            Option_1 = QueriesList.QList[3].Option_1;
-            Option_2 = QueriesList.QList[3].Option_2;
-            Option_3 = QueriesList.QList[3].Option_3;
-            Option_4 = QueriesList.QList[3].Option_4;
-        }
-
-        private void Question_5()
-        {
-            Question = QueriesList.QList[4].Question;
-            Answer = QueriesList.QList[4].Answer;
-            Justification = QueriesList.QList[4].Justification;
-            Option_1 = QueriesList.QList[4].Option_1;
-            Option_2 = QueriesList.QList[4].Option_2;
-            Option_3 = QueriesList.QList[4].Option_3;
-            Option_4 = QueriesList.QList[4].Option_4;
-        }
-
-        private void Question_6()
-        {
-            Question = QueriesList.QList[5].Question;
-            Answer = QueriesList.QList[5].Answer;
-            Justification = QueriesList.QList[5].Justification;
-            Option_1 = QueriesList.QList[5].Option_1;
-            Option_2 = QueriesList.QList[5].Option_2;
-            Option_3 = QueriesList.QList[5].Option_3;
-            Option_4 = QueriesList.QList[5].Option_4;
-        }
-
-        private void Question_7()
-        {
-            Question = QueriesList.QList[6].Question;
-            Answer = QueriesList.QList[6].Answer;
-            Justification = QueriesList.QList[6].Justification;
-            Option_1 = QueriesList.QList[6].Option_1;
-            Option_2 = QueriesList.QList[6].Option_2;
-            Option_3 = QueriesList.QList[6].Option_3;
-            Option_4 = QueriesList.QList[6].Option_4;
-        }
-
-        private void Question_8()
-        {
-            Question = QueriesList.QList[7].Question;
-            Answer = QueriesList.QList[7].Answer;
-            Justification = QueriesList.QList[7].Justification;
-            Option_1 = QueriesList.QList[7].Option_1;
-            Option_2 = QueriesList.QList[7].Option_2;
-            Option_3 = QueriesList.QList[7].Option_3;
-            Option_4 = QueriesList.QList[7].Option_4;
-        }
-
-        private void Question_9()
-        {
-            Question = QueriesList.QList[8].Question;
-            Answer = QueriesList.QList[8].Answer;
-            Justification = QueriesList.QList[8].Justification;
-            Option_1 = QueriesList.QList[8].Option_1;
-            Option_2 = QueriesList.QList[8].Option_2;
-            Option_3 = QueriesList.QList[8].Option_3;
-            Option_4 = QueriesList.QList[8].Option_4;
-        }
-
-        private void Question_10()
-        {
-            Question = QueriesList.QList[9].Question;
-            Answer = QueriesList.QList[9].Answer;
-            Justification = QueriesList.QList[9].Justification;
-            Option_1 = QueriesList.QList[9].Option_1;
-            Option_2 = QueriesList.QList[9].Option_2;
-            Option_3 = QueriesList.QList[9].Option_3;
-            Option_4 = QueriesList.QList[9].Option_4;
-        }
-        #endregion
 
         private async void CheckAnswer()
         {
             if (_optionTapped == Answer)
             {
-                Session.hitsCount++;
+                Session.HitsCount++;
 
                 if (_optionTapped == EOptions.Option_1)
                 {
@@ -373,6 +286,7 @@ namespace QuizBio.ViewModels
                 }
             }
 
+            Session.QueriesAnswered.Add(_currentQuestionNumber);
             JustificationVisible = true;
             FadeIn(Answer);
         }
@@ -401,27 +315,6 @@ namespace QuizBio.ViewModels
             set { SetProperty(ref _question, value); }
         }
 
-        private EOptions _answer;
-        public EOptions Answer
-        {
-            get { return _answer; }
-            set { SetProperty(ref _answer, value); }
-        }
-        
-        private string _justification;
-        public string Justification
-        {
-            get { return _justification; }
-            set { SetProperty(ref _justification, value); }
-        }
-
-        private bool _justificationVisible;
-        public bool JustificationVisible
-        {
-            get { return _justificationVisible; }
-            set { SetProperty(ref _justificationVisible, value); }
-        }
-
         private string _option1;
         public string Option_1
         {
@@ -436,7 +329,7 @@ namespace QuizBio.ViewModels
             set { SetProperty(ref _option1Color, value); }
         }
 
-        private bool _option1Visible = true;
+        private bool _option1Visible;
         public bool Option_1_Visible
         {
             get { return _option1Visible; }
@@ -457,7 +350,7 @@ namespace QuizBio.ViewModels
             set { SetProperty(ref _option2Color, value); }
         }
 
-        private bool _option2Visible = true;
+        private bool _option2Visible;
         public bool Option_2_Visible
         {
             get { return _option2Visible; }
@@ -478,7 +371,7 @@ namespace QuizBio.ViewModels
             set { SetProperty(ref _option3Color, value); }
         }
 
-        private bool _option3Visible = true;
+        private bool _option3Visible;
         public bool Option_3_Visible
         {
             get { return _option3Visible; }
@@ -499,11 +392,39 @@ namespace QuizBio.ViewModels
             set { SetProperty(ref _option4Color, value); }
         }
 
-        private bool _option4Visible = true;
+        private bool _option4Visible;
         public bool Option_4_Visible
         {
             get { return _option4Visible; }
             set { SetProperty(ref _option4Visible, value); }
+        }
+
+        private EOptions _answer;
+        public EOptions Answer
+        {
+            get { return _answer; }
+            set { SetProperty(ref _answer, value); }
+        }
+
+        private string _justification;
+        public string Justification
+        {
+            get { return _justification; }
+            set { SetProperty(ref _justification, value); }
+        }
+
+        private bool _justificationVisible;
+        public bool JustificationVisible
+        {
+            get { return _justificationVisible; }
+            set { SetProperty(ref _justificationVisible, value); }
+        }
+
+        private int _justificationOpacity = 0;
+        public int JustificationOpacity
+        {
+            get { return _justificationOpacity; }
+            set { SetProperty(ref _justificationOpacity, value); }
         }
         #endregion
     }

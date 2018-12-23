@@ -2,15 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="QuizBio.Views.FinishPage"
+             BackgroundColor="#F4FEF4"
              Title="{Binding Title}">
     <StackLayout>
         <Image Source="bioquizicon.png"
                Margin="0,0,0,50"/>
 
-        <Label Text="Parabéns!"
-               FontSize="30"
+        <Label Text="{Binding FinishText}"
+               FontSize="50"
                Margin="0"
-               IsVisible="{Binding CongratulationsVisible}"
                VerticalOptions="CenterAndExpand" 
                HorizontalOptions="CenterAndExpand">
             <Label.FontFamily>

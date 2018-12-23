@@ -24,7 +24,7 @@ namespace QuizBio.ViewModels
 
         public void GoToQueryPage()
         {
-            Session.hitsCount = 0;
+            Session.HitsCount = 0;
             NavigationParameters navParam = new NavigationParameters();
             navParam.Add("QuestionNumber", 1);
             _navigationService.NavigateAsync("QueryPage",navParam);

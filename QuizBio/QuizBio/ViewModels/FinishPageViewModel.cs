@@ -19,27 +19,31 @@ namespace QuizBio.ViewModels
 
             GoBackTapped = new DelegateCommand(GoToMainPage);
 
-            if (Session.hitsCount > 1)
+            if (Session.HitsCount >= 5)
             {
-                CongratulationsVisible = true;
+                FinishText = "Parabéns!";
+            }
+            else
+            {
+                FinishText = "Fim";
             }
 
-            HitsCount = "Você acertou " + Session.hitsCount + " das 10 questões.";
+            HitsCount = "Você acertou " + Session.HitsCount + " das 10 questões.";
         }
 
         #region functions
         private async void GoToMainPage()
         {
-            await _navigationService.NavigateAsync(new Uri("app://NavigationPage/MainPage", UriKind.Absolute));
+            await _navigationService.NavigateAsync(new Uri("http://QuizBio.com/NavigationPage/MainPage", UriKind.Absolute));
         }
         #endregion
 
         #region properties
-        private bool _congratulationsVisible;
-        public bool CongratulationsVisible
+        private string _finishText;
+        public string FinishText
         {
-            get { return _congratulationsVisible; }
-            set { SetProperty(ref _congratulationsVisible, value); }
+            get { return _finishText; }
+            set { SetProperty(ref _finishText, value); }
         }
 
         private string _hitsCount;

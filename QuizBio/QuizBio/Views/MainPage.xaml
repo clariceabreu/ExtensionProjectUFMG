@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#F4FEF4"
              x:Class="QuizBio.Views.MainPage">
     <StackLayout>
        
         <Image Source="bioquizicon.png"/>
 
         <Label Text="Bem vindo ao BioQuiz!"
-               FontSize="30"
+               FontSize="50"
                Margin="30"
+               HorizontalTextAlignment="Center"
                VerticalOptions="CenterAndExpand" 
                HorizontalOptions="CenterAndExpand">
             <Label.FontFamily>

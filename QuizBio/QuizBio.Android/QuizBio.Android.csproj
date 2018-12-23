@@ -70,7 +70,6 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <None Include="Resources\backgound.jpg" />
     <None Include="Resources\bioback.png" />
   </ItemGroup>
   <ItemGroup>
@@ -107,8 +106,6 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\SnellRoundhand.ttf" />
     <AndroidAsset Include="Assets\futura-medium.ttf" />
-    <AndroidAsset Include="Assets\NeuzeitSBook.ttf" />
-    <AndroidAsset Include="Assets\NeuzeitBold.ttf" />
     <AndroidAsset Include="Assets\Cronos.ttf" />
   </ItemGroup>
   <ItemGroup>

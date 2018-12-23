@@ -1,15 +1,18 @@
-﻿<Properties StartupConfiguration="{41ADF7E9-E340-4D6C-B35E-45D4EFDDEBA9}|Default">
-  <MonoDevelop.Ide.ItemProperties.QuizBio.Android PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="QuizBio/QuizBio/ViewModels/MainPageViewModel.cs">
+﻿<Properties StartupConfiguration="{89D896FB-3D0E-40B1-A6AD-25A52536E281}|Default">
+  <MonoDevelop.Ide.ItemProperties.QuizBio.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.922F667B-AE47-4B85-B0FA-3F859CE8DCED" />
+  <MonoDevelop.Ide.ItemProperties.QuizBio.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="QuizBio/QuizBio/ViewModels/FinishPageViewModel.cs">
     <Files>
-      <File FileName="QuizBio/QuizBio/Views/MainPage.xaml" Line="41" Column="36" />
-      <File FileName="QuizBio/QuizBio/ViewModels/MainPageViewModel.cs" Line="26" Column="10" />
-      <File FileName="QuizBio/QuizBio/Views/QueryPage.xaml" Line="92" Column="22" />
-      <File FileName="QuizBio/QuizBio/ViewModels/QueryPageViewModel.cs" Line="246" Column="17" />
-      <File FileName="QuizBio/QuizBio/Models/QueriesList.cs" Line="6" Column="29" />
-      <File FileName="QuizBio/QuizBio/Views/FinishPage.xaml" Line="6" Column="1" />
+      <File FileName="QuizBio/QuizBio/Views/MainPage.xaml" Line="45" Column="19" />
+      <File FileName="QuizBio/QuizBio/ViewModels/MainPageViewModel.cs" Line="33" Column="6" />
+      <File FileName="QuizBio/QuizBio/Views/QueryPage.xaml" Line="145" Column="33" />
+      <File FileName="QuizBio/QuizBio/ViewModels/QueryPageViewModel.cs" Line="71" Column="22" />
+      <File FileName="QuizBio/QuizBio/Models/QueriesList.cs" Line="35" Column="40" />
+      <File FileName="QuizBio/QuizBio/Views/FinishPage.xaml" Line="8" Column="28" />
       <File FileName="QuizBio/QuizBio/Views/FinishPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="QuizBio/QuizBio/ViewModels/FinishPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="QuizBio/QuizBio/ViewModels/FinishPageViewModel.cs" Line="37" Column="81" />
+      <File FileName="QuizBio/QuizBio/Models/Session.cs" Line="9" Column="9" />
+      <File FileName="QuizBio/QuizBio/App.xaml.cs" Line="27" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

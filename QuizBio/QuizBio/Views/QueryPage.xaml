@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="QuizBio.Views.QueryPage"
+             BackgroundColor="#F4FEF4"
              Title="{Binding Title}">
     <StackLayout>
         <Frame CornerRadius="5"
@@ -144,7 +145,7 @@
                HorizontalOptions="FillAndExpand" 
                VerticalOptions="StartAndExpand"
                IsVisible="{Binding JustificationVisible}"
-               Opacity="0"
+               Opacity="{Binding JustificationOpacity}"
                x:Name="justification">
             <Label Text="{Binding Justification}"/>
         </Frame>       

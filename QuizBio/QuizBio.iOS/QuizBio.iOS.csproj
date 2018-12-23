@@ -133,9 +133,6 @@
     <BundleResource Include="Resources\Default@2x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\bioquizicon.png" />
-    <BundleResource Include="Resources\backgroundtemp.jpg" />
-    <BundleResource Include="Resources\IMG_2435.jpg" />
-    <BundleResource Include="Resources\textureback.jpg" />
     <BundleResource Include="Resources\bioback.png" />
   </ItemGroup>
   <ItemGroup>
