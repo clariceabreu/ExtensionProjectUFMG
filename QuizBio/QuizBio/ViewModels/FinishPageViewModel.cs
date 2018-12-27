@@ -19,16 +19,16 @@ namespace QuizBio.ViewModels
 
             GoBackTapped = new DelegateCommand(GoToMainPage);
 
-            if (Session.HitsCount >= 5)
+            if (Session.HitsCount == QueriesList.QList.Count)
             {
-                FinishText = "Parabéns!";
+                FinishText = "Parabéns";
+                HitsCount = "Você acertou todas as questões!";
             }
             else
             {
                 FinishText = "Fim";
+                HitsCount = "Você acertou " + Session.HitsCount + " das " + QueriesList.QList.Count + " questões.";
             }
-
-            HitsCount = "Você acertou " + Session.HitsCount + " das 10 questões.";
         }
 
         #region functions

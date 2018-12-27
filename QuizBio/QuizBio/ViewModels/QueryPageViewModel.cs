@@ -86,6 +86,7 @@ namespace QuizBio.ViewModels
             {
                 QueriesList.InitializeList();
                 Session.QueriesAnswered.Clear();
+
             }
 
             questionNumber--; //Array starts at 0 instead of 1

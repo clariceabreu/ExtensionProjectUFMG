@@ -9,6 +9,8 @@ namespace QuizBio.Models
 
         public static void InitializeList()
         {
+            QList.Clear();
+
             string question = "Qual dos seguintes animais é do filo dos cordados?";
             EOptions answer = EOptions.Option_2;
             string justification = "Os cordados são animais cuja principal característica é a presença de notocorda, que consiste em uma estrutura localizada entre o tubo digestivo e a medula espinal. Dos animais citados apenas a baleia possui notocorda.";

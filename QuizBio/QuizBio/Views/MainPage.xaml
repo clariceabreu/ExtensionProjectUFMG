@@ -7,7 +7,7 @@
        
         <Image Source="bioquizicon.png"/>
 
-        <Label Text="Bem vindo ao BioQuiz!"
+        <Label Text="Bem vindo ao Bioquiz!"
                FontSize="50"
                Margin="30"
                HorizontalTextAlignment="Center"
